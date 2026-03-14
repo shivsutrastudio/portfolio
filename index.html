@@ -8,36 +8,52 @@
 
 <title>ShivSutra Studio | Sahil Dhapta</title>
 
-<meta name="description" content="Portfolio of Sahil Dhapta — Founder of ShivSutra Studio">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-body{
+*{
+box-sizing:border-box;
 margin:0;
-font-family:'Inter',sans-serif;
-background:#111;
-color:white;
-text-align:center;
+padding:0;
 }
 
+body{
+font-family:'Inter',sans-serif;
+background:#0f0f0f;
+color:white;
+line-height:1.6;
+}
+
+/* NAVBAR */
+
 nav{
-position:fixed;
-top:0;
-width:100%;
 display:flex;
-justify-content:center;
-gap:40px;
-padding:20px;
-background:#111;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+position:sticky;
+top:0;
+background:#0f0f0f;
+z-index:10;
+}
+
+nav h2{
+font-weight:700;
 }
 
 nav a{
 color:white;
+margin-left:25px;
 text-decoration:none;
-font-weight:600;
+opacity:.8;
 }
+
+nav a:hover{
+opacity:1;
+}
+
+/* HERO */
 
 .hero{
 min-height:90vh;
@@ -45,27 +61,157 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-padding:20px;
+text-align:center;
+padding:40px;
+background:linear-gradient(120deg,#ff7a18,#ffb347);
+color:black;
 }
 
-h1{
-font-size:60px;
+.hero h1{
+font-size:64px;
 margin-bottom:10px;
 }
 
-p{
+.hero p{
 max-width:600px;
-opacity:.8;
+font-size:20px;
 }
 
-.btn{
+.hero a{
 margin-top:30px;
-background:#ff7a18;
-padding:14px 34px;
+background:black;
+color:white;
+padding:14px 32px;
 border-radius:8px;
 text-decoration:none;
-color:white;
 font-weight:600;
+}
+
+/* SECTION */
+
+.section{
+padding:90px 10%;
+}
+
+.section h2{
+text-align:center;
+font-size:36px;
+margin-bottom:50px;
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+}
+
+.card{
+background:#1a1a1a;
+border-radius:12px;
+overflow:hidden;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.card a{
+display:inline-block;
+margin-top:10px;
+background:#ff7a18;
+color:white;
+padding:10px 20px;
+border-radius:6px;
+text-decoration:none;
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+text-align:center;
+}
+
+.service{
+background:#1a1a1a;
+padding:30px;
+border-radius:10px;
+}
+
+/* TESTIMONIALS */
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.testimonial{
+background:#1a1a1a;
+padding:25px;
+border-radius:10px;
+}
+
+/* CTA */
+
+.cta{
+background:linear-gradient(120deg,#ff7a18,#ffb347);
+color:black;
+text-align:center;
+padding:80px 20px;
+}
+
+.cta a{
+display:inline-block;
+margin-top:20px;
+background:black;
+color:white;
+padding:14px 30px;
+border-radius:8px;
+text-decoration:none;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:16px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+}
+
+/* FOOTER */
+
+footer{
+background:#000;
+color:#aaa;
+text-align:center;
+padding:30px;
+margin-top:40px;
 }
 
 </style>
@@ -74,11 +220,21 @@ font-weight:600;
 
 <body>
 
+<!-- NAVBAR -->
+
 <nav>
 
-<a href="index.html">Home</a> <a href="projects.html">Projects</a> <a href="contact.html">Contact</a>
+<h2>ShivSutra Studio</h2>
+
+<div>
+
+<a href="#projects">Projects</a> <a href="#services">Services</a> <a href="#contact">Contact</a>
+
+</div>
 
 </nav>
+
+<!-- HERO -->
 
 <section class="hero">
 
@@ -86,14 +242,150 @@ font-weight:600;
 
 <p>
 
-Founder of ShivSutra Studio — designing modern websites for restaurants,
-retail stores and businesses worldwide.
+Founder of ShivSutra Studio.
+I design modern websites for restaurants, travel brands and retail businesses.
 
 </p>
 
-<a class="btn" href="projects.html">View Projects</a>
+<a href="#projects">View My Work</a>
 
 </section>
+
+<!-- PROJECTS -->
+
+<section class="section" id="projects">
+
+<h2>Featured Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+
+<img src="https://image.thum.io/get/width/900/https://thesafarnamatrails.netlify.app">
+
+<div class="card-content">
+
+<h3>Safarnama Trails</h3>
+
+<p>Tourism website showcasing travel destinations.</p>
+
+<a href="https://thesafarnamatrails.netlify.app">Visit Website</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://image.thum.io/get/width/900/https://restraunt3015.vercel.app">
+
+<div class="card-content">
+
+<h3>ShivSutra Restaurant</h3>
+
+<p>Restaurant website with menu and booking sections.</p>
+
+<a href="https://restraunt3015.vercel.app/index.html">Visit Website</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://image.thum.io/get/width/900/https://retail-orcin.vercel.app">
+
+<div class="card-content">
+
+<h3>Retail Store Website</h3>
+
+<p>Modern retail storefront UI with product showcase.</p>
+
+<a href="https://retail-orcin.vercel.app">Visit Website</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="section" id="services">
+
+<h2>Services</h2>
+
+<div class="services">
+
+<div class="service">Restaurant Website Design</div>
+<div class="service">Travel & Tourism Websites</div>
+<div class="service">Retail Store Websites</div>
+<div class="service">Business Landing Pages</div>
+
+</div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section class="section">
+
+<h2>Client Testimonials</h2>
+
+<div class="testimonials">
+
+<div class="testimonial">
+"Beautiful design and smooth website experience."
+</div>
+
+<div class="testimonial">
+"Our travel website finally looks professional."
+</div>
+
+<div class="testimonial">
+"Clean UI and fast delivery."
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+<h2>Need a Website for Your Business?</h2>
+
+<a href="https://wa.me/917876335621">Hire Me</a>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="section contact" id="contact">
+
+<h2>Contact</h2>
+
+<p>
+
+Phone: 7876335621 <br>
+Email: [shivsutrastudio@gmail.com](mailto:shivsutrastudio@gmail.com)
+
+</p>
+
+<a href="https://www.instagram.com/shivsutrastudio">Instagram</a>
+
+</section>
+
+<a class="whatsapp" href="https://wa.me/917876335621">💬</a>
+
+<footer>
+
+© 2026 ShivSutra Studio — Designed by Sahil Dhapta
+
+</footer>
 
 </body>
 </html>
