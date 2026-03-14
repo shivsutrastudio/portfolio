@@ -1,0 +1,16 @@
+.logo{
+width:120px;
+margin-bottom:20px;
+}
+
+.tagline{
+font-weight:600;
+margin-bottom:10px;
+}
+
+.about-box{
+max-width:700px;
+margin:auto;
+text-align:center;
+line-height:1.7;
+}
