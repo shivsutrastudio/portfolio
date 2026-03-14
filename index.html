@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -15,14 +16,17 @@ scroll-behavior:smooth;
 
 body{
 margin:0;
-font-family:'Segoe UI',sans-serif;
-background:#fafafa;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+background:#f8f8f8;
 color:#333;
 }
 
+/* HERO */
+
 .hero{
-height:80vh;
-background:url("https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=1600") center/cover;
+height:90vh;
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=1600") center/cover;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -32,55 +36,100 @@ padding:20px;
 }
 
 .hero h1{
-font-size:50px;
-margin-bottom:10px;
+font-size:56px;
+margin:0;
+opacity:0;
+transform:translateY(30px);
+animation:fadeUp 1s ease forwards;
 }
 
 .hero p{
-font-size:20px;
-opacity:.9;
+font-size:22px;
+margin-top:15px;
+opacity:0;
+animation:fadeUp 1.4s ease forwards;
 }
 
+.hero a{
+margin-top:30px;
+display:inline-block;
+background:#f4a261;
+color:white;
+padding:14px 32px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+opacity:0;
+animation:fadeUp 1.8s ease forwards;
+}
+
+@keyframes fadeUp{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* SECTIONS */
+
 .section{
-padding:80px 20px;
+padding:90px 20px;
 max-width:1100px;
 margin:auto;
 }
 
 h2{
 text-align:center;
-margin-bottom:50px;
-font-size:32px;
+font-size:36px;
+margin-bottom:60px;
 }
+
+/* PROJECTS */
 
 .projects{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:30px;
 }
 
 .card{
 background:white;
-border-radius:12px;
-padding:25px;
-box-shadow:0 8px 25px rgba(0,0,0,0.08);
-transition:transform .3s,box-shadow .3s;
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+transition:.3s;
 }
 
 .card:hover{
-transform:translateY(-6px);
-box-shadow:0 14px 35px rgba(0,0,0,0.15);
+transform:translateY(-8px);
+box-shadow:0 20px 50px rgba(0,0,0,.18);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.card h3{
+margin-top:0;
 }
 
 .btn{
 display:inline-block;
-margin-top:12px;
+margin-top:10px;
 background:#f4a261;
 color:white;
 padding:10px 22px;
 border-radius:6px;
 text-decoration:none;
 }
+
+/* SERVICES */
 
 .services{
 display:grid;
@@ -91,18 +140,53 @@ text-align:center;
 
 .service{
 background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 6px 18px rgba(0,0,0,0.08);
+padding:30px;
+border-radius:14px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+font-weight:600;
 }
 
-.about{
-text-align:center;
-max-width:700px;
-margin:auto;
-font-size:18px;
-line-height:1.7;
+/* TESTIMONIALS */
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
 }
+
+.testimonial{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+font-style:italic;
+}
+
+.testimonial b{
+display:block;
+margin-top:10px;
+font-style:normal;
+}
+
+/* CTA */
+
+.cta{
+background:#111;
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.cta a{
+background:#f4a261;
+padding:14px 32px;
+border-radius:8px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* CONTACT */
 
 .contact{
 text-align:center;
@@ -128,6 +212,8 @@ cursor:pointer;
 font-size:16px;
 }
 
+/* FOOTER */
+
 footer{
 background:#111;
 color:#aaa;
@@ -135,6 +221,8 @@ text-align:center;
 padding:30px;
 margin-top:70px;
 }
+
+/* WHATSAPP */
 
 .whatsapp{
 position:fixed;
@@ -146,13 +234,16 @@ padding:14px;
 border-radius:50%;
 text-decoration:none;
 font-size:22px;
-box-shadow:0 6px 20px rgba(0,0,0,0.25);
+box-shadow:0 6px 20px rgba(0,0,0,.25);
 }
 
 </style>
+
 </head>
 
 <body>
+
+<!-- HERO -->
 
 <section class="hero">
 
@@ -161,28 +252,33 @@ box-shadow:0 6px 20px rgba(0,0,0,0.25);
 <h1>ShivSutra Studio</h1>
 
 <p>
-Crafted by Sahil Dhapta  
-Modern, Traditional & Creative Websites
+Crafted by Sahil Dhapta —  
+Modern websites for businesses worldwide
 </p>
 
-<a class="btn" href="#projects">View My Work</a>
+<a href="#projects">View My Work</a>
 
 </div>
 
 </section>
 
+<!-- PROJECTS -->
 
 <section class="section" id="projects">
 
-<h2>Projects</h2>
+<h2>Selected Projects</h2>
 
 <div class="projects">
 
 <div class="card">
 
+<img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800">
+
+<div class="card-content">
+
 <h3>Safarnama Trails</h3>
 
-<p>Tourism website showcasing destinations and travel experiences.</p>
+<p>Tourism website showcasing travel destinations and experiences.</p>
 
 <a class="btn" href="https://thesafarnamatrails.netlify.app/" target="_blank">
 Visit Website
@@ -190,12 +286,17 @@ Visit Website
 
 </div>
 
+</div>
 
 <div class="card">
 
+<img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5">
+
+<div class="card-content">
+
 <h3>ShivSutra Restaurant</h3>
 
-<p>Restaurant website featuring menu sections, gallery and booking contact.</p>
+<p>Restaurant website with menu sections and booking contact.</p>
 
 <a class="btn" href="https://restraunt3015.vercel.app/index.html" target="_blank">
 Visit Website
@@ -205,8 +306,29 @@ Visit Website
 
 </div>
 
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1607082349566-187342175e2f">
+
+<div class="card-content">
+
+<h3>Retail Store Website</h3>
+
+<p>Modern retail storefront UI showcasing products and offers.</p>
+
+<a class="btn" href="https://retail-orcin.vercel.app/" target="_blank">
+Visit Website
+</a>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
+<!-- SERVICES -->
 
 <section class="section">
 
@@ -214,45 +336,67 @@ Visit Website
 
 <div class="services">
 
-<div class="service">
-Restaurant Website Design
+<div class="service">Restaurant Website Design</div>
+<div class="service">Travel & Tourism Websites</div>
+<div class="service">Retail Storefront Websites</div>
+<div class="service">Business Landing Pages</div>
+<div class="service">Website Redesign</div>
+
 </div>
 
-<div class="service">
-Travel & Tourism Websites
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section class="section">
+
+<h2>Client Testimonials</h2>
+
+<div class="testimonials">
+
+<div class="testimonial">
+
+"Beautiful design and smooth website experience. Highly recommended!"
+
+<b>Restaurant Client</b>
+
 </div>
 
-<div class="service">
-Business Landing Pages
+<div class="testimonial">
+
+"Our travel website looks amazing now."
+
+<b>Tourism Business</b>
+
 </div>
 
-<div class="service">
-Website Redesign
+<div class="testimonial">
+
+"Very clean modern design and fast delivery."
+
+<b>Retail Client</b>
+
 </div>
 
 </div>
 
 </section>
 
+<!-- CTA -->
 
-<section class="section about">
+<section class="cta">
 
-<h2>About</h2>
+<h2>Need a Website for Your Business?</h2>
 
-<p>
+<p>I work with clients globally.</p>
 
-Hi, I'm <b>Sahil Dhapta</b>, founder of <b>ShivSutra Studio</b>.
+<br>
 
-Some websites are modern.  
-Some are traditional.  
-And some carry a little creativity and joy.
-
-My goal is to design websites that feel elegant, meaningful and memorable.
-
-</p>
+<a href="https://wa.me/917876335621">Hire Me</a>
 
 </section>
 
+<!-- CONTACT -->
 
 <section class="section contact">
 
@@ -260,9 +404,8 @@ My goal is to design websites that feel elegant, meaningful and memorable.
 
 <p>
 
-Phone: 7876335621  
-<br>
-Email: shivsutrastudio@gmail.com
+Phone: 7876335621 <br>
+Email: [shivsutrastudio@gmail.com](mailto:shivsutrastudio@gmail.com)
 
 </p>
 
@@ -286,9 +429,7 @@ Instagram
 
 </section>
 
-
 <a class="whatsapp" href="https://wa.me/917876335621">💬</a>
-
 
 <footer>
 
