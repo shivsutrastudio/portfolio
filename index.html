@@ -1,391 +1,293 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ShivSutra Studio | Sahil Dhapta</title>
+<title>Sahil Dhapta | Operations & Project Delivery Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
-}
-
-body{
-font-family:'Inter',sans-serif;
-background:#0f0f0f;
-color:white;
-line-height:1.6;
-}
-
-/* NAVBAR */
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 10%;
-position:sticky;
-top:0;
-background:#0f0f0f;
-z-index:10;
-}
-
-nav h2{
-font-weight:700;
-}
-
-nav a{
-color:white;
-margin-left:25px;
-text-decoration:none;
-opacity:.8;
-}
-
-nav a:hover{
-opacity:1;
-}
-
-/* HERO */
-
-.hero{
-min-height:90vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:40px;
-background:linear-gradient(120deg,#ff7a18,#ffb347);
-color:black;
-}
-
-.hero h1{
-font-size:64px;
-margin-bottom:10px;
-}
-
-.hero p{
-max-width:600px;
-font-size:20px;
-}
-
-.hero a{
-margin-top:30px;
-background:black;
-color:white;
-padding:14px 32px;
-border-radius:8px;
-text-decoration:none;
-font-weight:600;
-}
-
-/* SECTION */
-
-.section{
-padding:90px 10%;
-}
-
-.section h2{
-text-align:center;
-font-size:36px;
-margin-bottom:50px;
-}
-
-/* PROJECTS */
-
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:40px;
-}
-
-.card{
-background:#1a1a1a;
-border-radius:12px;
-overflow:hidden;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card img{
-width:100%;
-height:200px;
-object-fit:cover;
-}
-
-.card-content{
-padding:20px;
-}
-
-.card a{
-display:inline-block;
-margin-top:10px;
-background:#ff7a18;
-color:white;
-padding:10px 20px;
-border-radius:6px;
-text-decoration:none;
-}
-
-/* SERVICES */
-
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:30px;
-text-align:center;
-}
-
-.service{
-background:#1a1a1a;
-padding:30px;
-border-radius:10px;
-}
-
-/* TESTIMONIALS */
-
-.testimonials{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.testimonial{
-background:#1a1a1a;
-padding:25px;
-border-radius:10px;
-}
-
-/* CTA */
-
-.cta{
-background:linear-gradient(120deg,#ff7a18,#ffb347);
-color:black;
-text-align:center;
-padding:80px 20px;
-}
-
-.cta a{
-display:inline-block;
-margin-top:20px;
-background:black;
-color:white;
-padding:14px 30px;
-border-radius:8px;
-text-decoration:none;
-}
-
-/* CONTACT */
-
-.contact{
-text-align:center;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:16px;
-border-radius:50%;
-font-size:22px;
-text-decoration:none;
-}
-
-/* FOOTER */
-
-footer{
-background:#000;
-color:#aaa;
-text-align:center;
-padding:30px;
-margin-top:40px;
-}
-
-</style>
 
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<header>
 
-<nav>
+<div class="hero">
 
-<h2>ShivSutra Studio</h2>
+<img src="logo.png" class="logo">
+
+<img src="profile.jpg" class="profile">
 
 <div>
 
-<a href="#projects">Projects</a> <a href="#services">Services</a> <a href="#contact">Contact</a>
+<h1>Sahil Dhapta</h1>
+
+<p class="tagline">
+Operations & Project Delivery Specialist
+</p>
+
+<p>
+Helping global teams improve workflows,
+optimize support operations and deliver digital projects.
+</p>
 
 </div>
 
-</nav>
+</div>
 
-<!-- HERO -->
+</header>
 
-<section class="hero">
+<!-- NAVIGATION BOXES -->
 
-<h1>Sahil Dhapta</h1>
+<section class="nav-box-section">
+
+<div class="nav-grid">
+
+<a href="#about" class="nav-box">About</a>
+
+<a href="#impact" class="nav-box">Impact</a>
+
+<a href="#cases" class="nav-box">Case Studies</a>
+
+<a href="#projects" class="nav-box">Projects</a>
+
+<a href="#tools" class="nav-box">Tools</a>
+
+<a href="#contact" class="nav-box">Contact</a>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="about-box">
 
 <p>
 
-Founder of ShivSutra Studio.
-I design modern websites for restaurants, travel brands and retail businesses.
+I'm <strong>Sahil Dhapta</strong>, an Operations and Project Delivery
+specialist with experience managing enterprise client workflows,
+support operations and digital project execution.
 
 </p>
 
-<a href="#projects">View My Work</a>
+<p>
+
+My focus is helping global teams improve operational efficiency,
+optimize communication workflows and deliver projects with
+high reliability and SLA compliance.
+
+</p>
+
+<p>
+
+Alongside operations consulting, I also design and launch
+modern digital products and websites through my creative
+studio <strong>ShivSutra Studio</strong>.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- IMPACT -->
+
+<section id="impact">
+
+<h2>Operational Impact</h2>
+
+<div class="impact-grid">
+
+<div class="impact-card">
+<h3>5+</h3>
+<p>Enterprise Clients Managed</p>
+</div>
+
+<div class="impact-card">
+<h3>150+</h3>
+<p>Monthly Service Cases</p>
+</div>
+
+<div class="impact-card">
+<h3>30%</h3>
+<p>Repeat Issue Reduction</p>
+</div>
+
+<div class="impact-card">
+<h3>98%</h3>
+<p>SLA Compliance</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CASE STUDIES -->
+
+<section id="cases">
+
+<h2>Consulting Case Studies</h2>
+
+<div class="case-grid">
+
+<div class="case-card" onclick="openCase('case1')">HR Query Resolution</div>
+
+<div class="case-card" onclick="openCase('case2')">Client Communication Workflow</div>
+
+<div class="case-card" onclick="openCase('case3')">Support Performance Analytics</div>
+
+<div class="case-card" onclick="openCase('case4')">Remote Hiring Workflow</div>
+
+<div class="case-card" onclick="openCase('case5')">Remote Team Productivity</div>
+
+<div class="case-card" onclick="openCase('case6')">Operations Workflow Optimization</div>
+
+</div>
+
+</section>
+
+<section id="case-detail" class="hidden">
+
+<h2 id="case-title"></h2>
+
+<div class="dashboard">
+
+<p id="case-problem"></p>
+
+<p id="case-solution"></p>
+
+<p id="case-impact"></p>
+
+</div>
+
+<div id="workflow" class="workflow"></div>
 
 </section>
 
 <!-- PROJECTS -->
 
-<section class="section" id="projects">
+<section id="projects">
 
-<h2>Featured Projects</h2>
+<h2>Digital Projects Delivered</h2>
 
-<div class="projects">
+<div class="projects-grid">
 
-<div class="card">
-
-<img src="https://image.thum.io/get/width/900/https://thesafarnamatrails.netlify.app">
-
-<div class="card-content">
+<div class="project-card">
 
 <h3>Safarnama Trails</h3>
 
-<p>Tourism website showcasing travel destinations.</p>
+<p>Tourism discovery platform for travel packages.</p>
 
-<a href="https://thesafarnamatrails.netlify.app">Visit Website</a>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="https://image.thum.io/get/width/900/https://restraunt3015.vercel.app">
-
-<div class="card-content">
-
-<h3>ShivSutra Restaurant</h3>
-
-<p>Restaurant website with menu and booking sections.</p>
-
-<a href="https://restraunt3015.vercel.app/index.html">Visit Website</a>
+<a href="https://thesafarnamatrails.netlify.app/" target="_blank">
+Visit Website
+</a>
 
 </div>
 
+<div class="project-card">
+
+<h3>ShivSutra Studio</h3>
+
+<p>Portfolio website for web development services.</p>
+
+<a href="https://shivsutrastudio.vercel.app/" target="_blank">
+Visit Website
+</a>
+
 </div>
 
-<div class="card">
+<div class="project-card">
 
-<img src="https://image.thum.io/get/width/900/https://retail-orcin.vercel.app">
+<h3>Restaurant Website</h3>
 
-<div class="card-content">
+<p>Restaurant landing page for menu and brand showcase.</p>
+
+<a href="https://restraunt3015.vercel.app/index.html" target="_blank">
+Visit Website
+</a>
+
+</div>
+
+<div class="project-card">
 
 <h3>Retail Store Website</h3>
 
-<p>Modern retail storefront UI with product showcase.</p>
+<p>Modern retail storefront showcasing products, promotions and responsive UI.</p>
 
-<a href="https://retail-orcin.vercel.app">Visit Website</a>
+<a href="https://retail-orcin.vercel.app/" target="_blank">
+Visit Website
+</a>
 
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- SERVICES -->
-
-<section class="section" id="services">
-
-<h2>Services</h2>
-
-<div class="services">
-
-<div class="service">Restaurant Website Design</div>
-<div class="service">Travel & Tourism Websites</div>
-<div class="service">Retail Store Websites</div>
-<div class="service">Business Landing Pages</div>
-
-</div>
-
-</section>
-
-<!-- TESTIMONIALS -->
-
-<section class="section">
-
-<h2>Client Testimonials</h2>
-
-<div class="testimonials">
-
-<div class="testimonial">
-"Beautiful design and smooth website experience."
-</div>
-
-<div class="testimonial">
-"Our travel website finally looks professional."
-</div>
-
-<div class="testimonial">
-"Clean UI and fast delivery."
 </div>
 
 </div>
 
 </section>
 
-<!-- CTA -->
+<!-- TOOLS -->
 
-<section class="cta">
+<section id="tools">
 
-<h2>Need a Website for Your Business?</h2>
+<h2>Tools & Systems</h2>
 
-<a href="https://wa.me/917876335621">Hire Me</a>
+<div class="tools">
+
+<span>Jira</span> <span>Workday</span> <span>Tableau</span> <span>Cognos</span> <span>Excel Analytics</span> <span>SharePoint</span>
+
+</div>
 
 </section>
 
 <!-- CONTACT -->
 
-<section class="section contact" id="contact">
+<section id="contact">
 
-<h2>Contact</h2>
+<h2>Let's Work Together</h2>
 
 <p>
-
-Phone: 7876335621 <br>
-Email: [shivsutrastudio@gmail.com](mailto:shivsutrastudio@gmail.com)
-
+If your organization is improving support operations,
+customer success workflows or remote team productivity,
+I'm open to collaboration.
 </p>
 
-<a href="https://www.instagram.com/shivsutrastudio">Instagram</a>
+<div class="contact-box">
+
+<p><strong>Email:</strong> mrdhapta@gmail.com</p>
+
+<p><strong>Phone / WhatsApp:</strong> +91 9015335621</p>
+
+<p>
+<strong>LinkedIn:</strong>
+<a href="https://linkedin.com/in/sahil-dhapta" target="_blank">
+linkedin.com/in/sahil-dhapta
+</a>
+</p>
+
+</div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/919015335621"
+target="_blank">
+
+Chat on WhatsApp
+
+</a>
 
 </section>
 
-<a class="whatsapp" href="https://wa.me/917876335621">💬</a>
-
-<footer>
-
-© 2026 ShivSutra Studio — Designed by Sahil Dhapta
-
-</footer>
+<script src="script.js"></script>
 
 </body>
 </html>
